@@ -9,8 +9,8 @@ Description: This package analyzes Williams College Archived Course Catalogs in
  about the given year's tuition price, geographical distribution, and size 
  of the undergraduate classes
 License: GPL-3
-Imports:
-Suggests: testthat
+Imports: pdftools, stringr
+Suggests: testthat, knitr
 LazyData: true
 URL: https://github.com/benmorton28/mortonephr
 BugReports: https://github.com/benmorton28/mortonephr/issues 
