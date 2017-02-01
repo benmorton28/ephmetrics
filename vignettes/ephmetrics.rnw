@@ -1,0 +1,56 @@
+\documentclass[a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{RJournal}
+\usepackage{amsmath,amssymb,array}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\begin{document}
+
+%% do not edit, for illustration only
+\sectionhead{Contributed research article}
+\volume{XX}
+\volnumber{YY}
+\year{20ZZ}
+\month{AAAA}
+
+%% replace RJtemplate with your article
+\begin{article}
+  \SweaveOpts{concordance=TRUE}
+
+\title{Ephmetrics}
+\author{Ben Morton}
+
+\maketitle
+
+%%\VignetteIndexEntry{Using the facage package}
+%%\VignetteDepends{facage}
+
+<<echo=FALSE>>=
+library("ephmetrics")
+options(width=80)
+@
+
+\abstract{The \pkg{ephmetrics} package analyzes Williams College Archived Course Catalogs in PDF form and reports specific data. This data includes information about the given year's tuition price, geographical distribution, and size of the undergradute classes}
+
+\section{Introduction}
+
+
+\section{Data}
+
+\section{Conclusion}
+
+\address{Ben Morton\\
+  Mathematics and Computer Science\\
+  Williams College\\
+  Williamstown, MA, USA\\}
+\email{bmm5@williams.edu}
+
+\end{article}
+
+\end{document}
+
+
+
+

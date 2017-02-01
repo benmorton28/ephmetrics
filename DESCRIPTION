@@ -14,3 +14,4 @@ Suggests: testthat, knitr
 LazyData: true
 URL: https://github.com/benmorton28/mortonephr
 BugReports: https://github.com/benmorton28/mortonephr/issues 
+VignetteBuilder: knitr
