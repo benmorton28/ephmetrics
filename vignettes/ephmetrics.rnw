@@ -33,10 +33,10 @@ library("ggplot2")
 options(width=80)
 @
 
-\abstract{The \pkg{ephmetrics} package analyzes Williams College Archived Course Catalogs in PDF form and reports specific data. This data includes information about the given year's tuition price, and size of the undergraduate classes}
+\abstract{The \pkg{ephmetrics} package analyzes Williams College Archived Course Catalogs in PDF form and reports specific data. This data includes information about the given year's tuition price and size of the undergraduate classes.}
 
 \section{Introduction}
-This package was designed for an internship project and I set out to develop an automated way of receiving certain metrics about Williams College and its student body over the years. An institution like Williams prides itself on its diversity and growth over time, and the data is organized in a way where this growth and geographical diversity can be easily analyzed in visualizations and dataframes.
+This package was designed for an internship project and I set out to develop an automated way of receiving certain metrics about Williams College and its student body over the years. An institution like Williams prides itself on its diversity and growth over time, and the data is organized in a way where this growth can be easily analyzed in visualizations and dataframes.
 
 
 \section{Data}
