@@ -3,6 +3,7 @@
 export(get_enrollment)
 export(get_geographical_distribution)
 export(get_price)
+export(get_price_data)
 importFrom(pdftools,pdf_text)
 importFrom(stringr,str_extract_all)
 importFrom(stringr,str_replace_all)

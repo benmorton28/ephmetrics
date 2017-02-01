@@ -29,6 +29,7 @@
 
 <<echo=FALSE>>=
 library("ephmetrics")
+library("ggplot2")
 options(width=80)
 @
 
@@ -38,7 +39,21 @@ options(width=80)
 
 
 \section{Data}
+The information in this package retrieves data from the Registrar Office of Williams College Archived Course Catalogs. These catalogs are found in PDF form, and the pdftools package was used to read and convert the PDF’s into text. Using the 2009-2010 catalog as a test case, functions were developed to capture the relevant information from the given year.
 
+The format of the catalog from each year is not exactly uniform, so the functions require updating based on the assumptions that were made. Examples of this are column layouts, what specific data follows what, and the overall formatting of each year’s information.
+
+\section{Examples of Using the Data}
+
+<<>>=
+price_data <- ephmetrics::get_price_data()
+price_data
+@
+<<fig=TRUE>>=
+print(ggplot(price_data, aes(x = Year, y = Tuition)) +
+        geom_line() +
+        geom_point())
+@
 \section{Conclusion}
 
 \address{Ben Morton\\

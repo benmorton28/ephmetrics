@@ -6,7 +6,8 @@
 #' @importFrom stringr str_replace_all str_trim str_extract_all
 #' @export
 get_geographical_distribution <- function(link= "http://web.williams.edu/admin/registrar//catalog/catalog0910.pdf"){
-  download_path <- paste("./inst/extdata/", basename(link), sep = "")
+  package_path <- system.file(package="ephmetrics")
+  download_path <- paste(package_path,"/extdata/", basename(link), sep = "")
   if(!file.exists(download_path)){
     download.file(link, destfile = download_path)
   }
