@@ -3,7 +3,7 @@
 #' @param link A link to a yearly pdf file on the Williams College Registrar's website.
 #' @return Price of tuition for that academic year
 #' @importFrom pdftools pdf_text
-#' @importFrom string str_replace_all
+#' @importFrom stringr str_replace_all
 #' @export
 get_price <- function(link= "http://web.williams.edu/admin/registrar//catalog/catalog0910.pdf"){
   download_path <- paste("./inst/extdata/", basename(link), sep = "")

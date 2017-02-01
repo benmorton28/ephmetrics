@@ -3,7 +3,7 @@
 #' @param link A link to a yearly pdf file on the Williams College Registrar's website.
 #' @return A list of size two with two dataframes(one domestic, one international) with two columns:state/country and number.
 #' @importFrom pdftools pdf_text
-#' @importFrom string str_replace_all str_trim str_extract_all
+#' @importFrom stringr str_replace_all str_trim str_extract_all
 #' @export
 get_geographical_distribution <- function(link= "http://web.williams.edu/admin/registrar//catalog/catalog0910.pdf"){
   download_path <- paste("./inst/extdata/", basename(link), sep = "")

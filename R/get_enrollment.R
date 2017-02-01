@@ -3,7 +3,7 @@
 #' @param link A link to a yearly pdf file on the Williams College Registrar's website.
 #' @return A numeric vector containing enrollment by year, from graduate, and then senior to freshman.
 #' @importFrom pdftools pdf_text
-#' @importFrom string str_replace_all
+#' @importFrom stringr str_replace_all
 #' @export
 get_enrollment <- function(link= "http://web.williams.edu/admin/registrar//catalog/catalog0910.pdf"){
   download_path <- paste("./inst/extdata/", basename(link), sep = "")
