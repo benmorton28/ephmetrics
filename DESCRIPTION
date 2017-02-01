@@ -4,12 +4,10 @@ Title: Retrieves Williams College Related Metrics From Archived Course Catalogs
 Version: 0.1.0
 Author: Ben Morton [aut,cre]
 Maintainer: Ben Morton <benmorton28@yahoo.com>
-Description: 
-    This package analyzes Williams College Archived Course Catalogs in
-PDF form and reports specific data. This data includes information 
-about the given year's tuition price, geographical distribution, size 
-of the undergraduate classes, and number of distinctions in the 
-graduating class. 
+Description: This package analyzes Williams College Archived Course Catalogs in
+ PDF form and reports specific data. This data includes information 
+ about the given year's tuition price, geographical distribution, and size 
+ of the undergraduate classes
 License: GPL-3
 Imports:
 Suggests: testthat

@@ -15,7 +15,6 @@ get_geographical_distribution <- function(link= "http://web.williams.edu/admin/r
   replaced_text <- stringr::str_replace_all(concatenated_text, "[\n]" , " ")
   replaced_text <- gsub("\\s+"," ",replaced_text)
   replaced_text <- gsub(".*(GEOGRAPHICAL DISTRIBUTION)","",replaced_text)
-  replaced_text <- gsub("(INDEX).*","",replaced_text)
   domestic <- gsub(".*(U.S. )","",replaced_text)
   domestic <- stringr::str_trim(gsub("(International).*","",domestic))
   domestic <- str_extract_all(domestic, "[A-Z][^0-9]+[0-9]+")[[1]]
