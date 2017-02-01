@@ -13,8 +13,8 @@ get_price <- function(link= "http://web.williams.edu/admin/registrar//catalog/ca
   text <- pdftools::pdf_text(download_path)
   concatenated_text <- paste(text, collapse = "")
   replaced_text <- stringr::str_replace_all(concatenated_text, "[\n]" , " ")
-  replaced_text <- gsub("\\s+"," ",replaced_text)
-  replaced_text <- gsub(".*(College charges)","",replaced_text)
+  replaced_text <- gsub("\\s+", " ", replaced_text)
+  replaced_text <- gsub(".*(College charges)", "", replaced_text)
   word_list <- strsplit(replaced_text, split = ' ')[[1]]
   cost <- word_list[grep('[$].*', word_list)[1]]
   cost <- as.numeric(substring(gsub(',', '', cost), 2, nchar(cost)))

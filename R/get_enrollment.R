@@ -13,8 +13,8 @@ get_enrollment <- function(link= "http://web.williams.edu/admin/registrar//catal
   text <- pdftools::pdf_text(download_path)
   concatenated_text <- paste(text, collapse = "")
   replaced_text <- stringr::str_replace_all(concatenated_text, "[\n]" , " ")
-  replaced_text <- gsub("\\s+"," ",replaced_text)
-  replaced_text <- gsub(".*(BY CLASSES)","",replaced_text)
+  replaced_text <- gsub("\\s+", " ", replaced_text)
+  replaced_text <- gsub(".*(BY CLASSES)", "", replaced_text)
   word_list <- strsplit(replaced_text, split = ' ')[[1]]
   cost <- word_list[grep('^[0-9]+$', word_list)]
   return(as.numeric(word_list[grep('^[0-9]+$', word_list)[c(2,4,6,8,10)]]))
